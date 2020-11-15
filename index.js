@@ -32,7 +32,7 @@ function reduceToTotal(arr, start){
 
 function reduceToAllTrue(arr){
     return arr.reduce((acc, el) => {
-        if(acc || el === true){
+        if(acc && Boolean(el) === true){
             return true;
         } else{
             return false;
