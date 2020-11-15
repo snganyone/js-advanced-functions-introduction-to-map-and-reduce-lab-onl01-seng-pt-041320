@@ -29,3 +29,7 @@ function reduceToTotal(arr, start){
         return total;
     }
 }
+
+function reduceToAllTrue(){
+    
+}
