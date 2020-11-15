@@ -34,7 +34,7 @@ function reduceToAllTrue(arr){
     return arr.reduce((acc, el) => {
         if(acc || el === true){
             return true;
-        } else if(acc || el === false){
+        } else{
             return false;
         }
     });
