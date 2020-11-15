@@ -30,6 +30,23 @@ function reduceToTotal(arr, start){
     }
 }
 
-function reduceToAllTrue(){
-    
+function reduceToAllTrue(arr){
+    return arr.reduce((acc, el) => {
+        if(acc || el === true){
+            return true;
+        } else if(acc || el === false){
+            return false;
+        }
+    });
 }
+
+function reduceToAnyTrue(arr){
+    return arr.reduce((acc, el) => {
+        if(acc || el === true){
+            return true;
+        } else{
+            return false;
+        }
+    });
+}
+
