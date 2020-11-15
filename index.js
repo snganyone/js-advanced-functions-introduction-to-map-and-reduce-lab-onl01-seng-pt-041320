@@ -18,3 +18,14 @@ function mapToSquare(arr){
 }
 
 //Reduce-Like Functions
+
+function reduceToTotal(arr, start){
+    const total = arr.reduce((total, amount) => total + amount);
+    const start_total = arr.reduce((total, amount) => total + amount, start);
+
+    if(start){
+        return start_total;
+    } else{
+        return total;
+    }
+}
